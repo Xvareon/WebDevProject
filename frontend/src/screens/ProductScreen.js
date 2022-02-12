@@ -1,6 +1,6 @@
-import data from '../data'
-import Rating from '../components/Rating'
-import { Link } from 'react-router-dom'
+import data from '../data';
+import Rating from '../components/Rating';
+import { Link } from 'react-router-dom';
 
 export default function ProductScreen(props) {
     const product = data.products.find((x) => x._id === props.match.params.id)
