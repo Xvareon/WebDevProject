@@ -1,0 +1,158 @@
+html{
+  font-size: 62.5%; /*16px * 62.5 = 10 px = 1 rem*/
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  height: 100%;
+}
+
+/*layout*/
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background-color: black;
+}
+
+main{
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: whitesmoke;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: tomato;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li{
+  margin-top: 1rem;
+}
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem black solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button:hover{
+  border: 0.1rem rgb(5, 248, 5) solid;
+}
+button.primary{
+  background-color: cyan;
+}
+button.block{
+  width: 100%;
+}
+header a{
+  color: whitesmoke;
+  padding: 1rem;
+}
+a.brand{
+  color: red;
+  font-size: 3rem;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
+.row.center{
+  justify-content: center;
+}
+img{
+  border-radius: 0.5rem;
+}
+img.medium{
+  max-width: 29rem;
+  width: 100%;
+}
+img.large{
+  width: 100%;
+}
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border: 0.5rem;
+  margin: 5rem;
+}
+.alert-info{
+  color: lightblue;
+  background-color: #e0e0ee;
+}
+.alert-error{
+  color: red;
+  background-color: #fff;
+} 
+.card{
+  border: 0.1rem black solid;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.card-body{
+  padding: 1rem;
+}
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+.price{
+  font-size: 2rem;
+}
+.rating span{
+  color: orange;
+  margin: 0.1rem;
+}
+.rating span:last-child{
+  color: black;
+}
+.success{
+  color: green;
+}
+.error{
+  color: red;
+}
