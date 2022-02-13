@@ -1,21 +1,20 @@
+
 html{
-  font-size: 62.5%; /*16px * 62.5 = 10 px = 1 rem*/
+  font-size: 62.5%; /*16px x 62.5= 10 px=1 rem*/
   box-sizing: border-box;
 }
-
 body{
   margin: 0;
   height: 100vh;
-  font-size: 1.6rem;
+  font-size:1.6rem ;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #131111e0;
 }
-
 #root{
   height: 100%;
 }
-
 /*layout*/
 .grid-container{
   display: grid;
@@ -27,132 +26,175 @@ body{
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-
 header{
-  grid-area: header;
-  background-color: black;
+  grid-area:header ;
+  background-color: #631212e0;
 }
-
 main{
   grid-area: main;
   padding: 1rem;
 }
-
 footer{
   grid-area: footer;
-  background-color: #203040;
-  color: whitesmoke;
+  background-color: #631212e0;
+  color: yellow;
 }
+/*common*/
 
 a{
   text-decoration: none;
+  color: yellow;
 }
 a:hover{
-  color: tomato;
+  color: black;
 }
 ul{
-  padding: 0;
-  margin: 0;
+  padding:0;
+  margin:0;
   list-style: none;
 }
 li{
   margin-top: 1rem;
+  color: yellow;
 }
+input,
+select,
+textarea,
 button{
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 0.1rem black solid;
-  font-size: 1.6rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size:1.6rem ;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+button{
   background-color: #f8f8f8;
   cursor: pointer;
 }
+input:hover,
+select:hover,
+textarea:hover,
+
 button:hover{
-  border: 0.1rem rgb(5, 248, 5) solid;
+  border: 0.4rem black solid;
 }
 button.primary{
-  background-color: cyan;
+  background-color: #f0c040;
+  color: black;
 }
+
 button.block{
-  width: 100%;
+  width:100% ;
 }
+
 header a{
-  color: whitesmoke;
+  color: yellow;
   padding: 1rem;
 }
 a.brand{
-  color: red;
+  color: yellow;
   font-size: 3rem;
+  font-weight: bold;
 }
+a.brand:hover{
+  color: black;
+}
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+
+
 .row{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color: yellow;
+}
+.row.center{
+  justify-content: center;
 }
 .row.top{
   align-items: flex-start;
 }
 .col-1{
-  flex: 1 1 25rem;
+  flex:1 1 25rem;
 }
 .col-2{
-  flex: 2 1 50rem;
+  flex:2 1 50rem;
 }
-.row.center{
-  justify-content: center;
+.min-30 {
+  min-width: 30rem;
 }
+
 img{
   border-radius: 0.5rem;
 }
+img.small {
+  max-width: 5rem;
+  width: 100%;
+}
+
 img.medium{
-  max-width: 29rem;
+  max-height: 18rem;
+  max-width: 32rem;
   width: 100%;
 }
 img.large{
   width: 100%;
+  max-height: 60rem;
+  max-width: 90rem;
 }
-.alert{
-  padding: 1rem;
-  border: 0.1rem solid transparent;
-  border: 0.5rem;
-  margin: 5rem;
-}
-.alert-info{
-  color: lightblue;
-  background-color: #e0e0ee;
-}
-.alert-error{
-  color: red;
-  background-color: #fff;
-} 
+
 .card{
-  border: 0.1rem black solid;
-  background-color: whitesmoke;
+  width: 30rem;
+  border: 0.1rem #c0c0c0 solid;
+  background-color: black;
   border-radius: 0.5rem;
   margin: 1rem;
 }
 .card-body{
   padding: 1rem;
+  background-color: #631212e0;
 }
 .card-body > *{
   margin-bottom: 0.5rem;
+
 }
 .price{
   font-size: 2rem;
 }
 .rating span{
-  color: orange;
+  color: #f0c040;
   margin: 0.1rem;
 }
 .rating span:last-child{
-  color: black;
+  color: white;
 }
 .success{
-  color: green;
+  color:yellowgreen;
 }
 .error{
-  color: red;
+  color: orange;
+}
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border: 0.5rem;
+}
+.alert-info{
+  color: white;
+  background-color: #631212e0;
+}
+.alert-danger{
+  color: #a02020;
+  background-color: #ffe0e0e0;
 }
