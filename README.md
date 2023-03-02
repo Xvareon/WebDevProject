@@ -1,2 +1,2 @@
 # WebDevProject
-Portfolio Version 1
+Web Development Project for developing a mock E-commerce website that sells dinosaur genes
